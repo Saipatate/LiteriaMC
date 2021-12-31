@@ -1,0 +1,137 @@
+.motif {
+    background: url(/imgs/wave.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+section-2 {
+    display: block;
+    padding: 30px 90px;
+    -webkit-filter: drop-shadow(5px 5px 5px #00000021);
+    filter: drop-shadow(5px 5px 5px #00000021);
+}
+
+.download-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    height: 100%;
+    width: 100%;
+}
+
+.download-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    padding: 0 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.title-download h1 {
+    margin-bottom: 70px;
+    font-size: 40px;
+    top: 20px;
+    position: relative;
+}
+
+.title-download h1::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 4px;
+    background: #414141;
+    border-radius: 5px;
+    left: 0;
+    bottom: -5px;
+    box-shadow: 0 2px 2px #FFFFFF1F;
+}
+
+.boxs {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 0 10px;
+}
+
+.box h1 {
+    position: relative;
+    text-transform: uppercase;
+    top: -25px;
+}
+
+.box img {
+    position: relative;
+    top: -10px;
+}
+
+.box .download {
+    position: relative;
+    bottom: -20px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background: linear-gradient(70deg,#fc5f21,#fd8556);
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    box-shadow: rgba(31, 31, 31, 0.35) 0px 5px 15px;
+    transition: .5s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.box h3 {
+    position: relative;
+    bottom: -20px;
+    text-align: center;
+}
+
+.download-content p {
+    margin-top: 20px;
+}
+
+.download-content p a {
+    color: #fc5f21;
+}
+
+@media screen and (max-width: 1024px) {
+    
+    .download-container {
+        margin-top: 50px;
+    }
+    .boxs {
+        flex-direction: column;
+        height: 100%;
+    }
+    .box {
+        display: flex;
+        justify-content: center;
+        margin: 10px 0;
+        height: 320px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    section-2 {
+        padding: 30px 20px;
+    }
+}
